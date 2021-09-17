@@ -1,0 +1,27 @@
+// Помощники
+@import 'utils/_parameters';// переменные
+@import 'utils/mixins';//миксины scss
+@import url(//db.onlinewebfonts.com/c/154ebfcef3ca74b92a56a5826ee85d74?family=Sharp+Sans+No1+Bold);
+@import url(//db.onlinewebfonts.com/c/6a1891db0152c7835cc61d5e95578b29?family=Sharp+Sans+No1+Book);
+
+//Общее
+@import 'main/_stylesheet'; // шрифты
+@import 'main/_reset'; // сброс стилей для кроссбраузерности
+@import 'main/_common'; // общие стили
+
+// дальше можно писать все стили сайта в этот файл, или писать их в компонентах
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffff;
+}
+.container {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@import 'components/header';
+@import 'components/first-section';

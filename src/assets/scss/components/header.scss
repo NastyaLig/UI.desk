@@ -1,0 +1,70 @@
+// для каждого компонента нужно импортить переменные, чтобы их использовать
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+
+.header{
+    &__wrap{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+
+    &__logo{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+    color: #333333;
+    margin-right: 16rem;
+    }
+    &__icon{
+        max-width: 6.5rem;
+        display: flex;
+        margin-right: 3rem;
+
+        :first-child{
+        padding-right: 2rem;
+        }
+    }
+    &__button{
+        width:16rem;
+        height: 5.4rem;
+        background: $c-text;
+        border-radius: 2.7rem;
+        
+        &_text{
+            font-family: Sofia Pro;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.7rem;
+            text-align: center;
+            padding:1.4rem 2.9rem;
+            color: #FFFFFF;
+        }
+    }
+}
+.nav{
+    font-size: 2rem;
+    line-height: 2.7rem;
+    display: flex;
+    margin: 0 35rem 0 0;
+
+
+    &.nav a{
+        font-family: Sofia Pro;
+        color:rgba(44, 56, 71, 0.8);
+        padding: 0 4rem 0 0;
+    }
+
+    &.nav a:hover{
+        color: #5FB848;
+    }
+
+    li{
+        display: inline;
+    }
+    
+}
